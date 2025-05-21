@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Techy Agency & Fun Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">TechnoAgency</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#game">Game</a></li>
+        <li><a href="#tasbeeh">Tasbeeh Counter</a></li>
+        <li><a href="#agency">Agency</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to TechnoAgency</h1>
+      <p>Your one-stop modern design and fun experience</p>
+      <a href="#game" class="btn-primary">Play Tic Tac Toe</a>
+    </div>
+  </section>
+
+  <section id="game" class="section-container">
+    <h2>Tic Tac Toe Game</h2>
+    <div class="tic-tac-toe">
+      <div class="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="game-info" id="game-info"></div>
+      <button id="restart-btn" class="btn-secondary">Restart Game</button>
+    </div>
+  </section>
+
+  <section id="tasbeeh" class="section-container">
+    <h2>Tasbeeh Counter</h2>
+    <div class="tasbeeh-counter">
+      <div id="count">0</div>
+      <button id="increment-btn" class="btn-primary">Count</button>
+      <button id="reset-btn" class="btn-secondary">Reset</button>
+    </div>
+  </section>
+
+  <section id="agency" class="section-container">
+    <h2>Website Design Agency</h2>
+    <div class="portfolio">
+      <div class="card">
+        <div class="card-image" style="background-image:url('https://source.unsplash.com/400x250/?website,design')"></div>
+        <div class="card-content">
+          <h3>Project Alpha</h3>
+          <p>Modern responsive website design for startups.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" style="background-image:url('https://source.unsplash.com/400x250/?app,design')"></div>
+        <div class="card-content">
+          <h3>Project Beta</h3>
+          <p>Mobile app UI/UX with clean interface.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" style="background-image:url('https://source.unsplash.com/400x250/?branding,design')"></div>
+        <div class="card-content">
+          <h3>Project Gamma</h3>
+          <p>Brand identity and logo design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TechnoAgency. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
