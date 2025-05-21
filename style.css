@@ -1,0 +1,250 @@
+/* Reset & basics */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #eee;
+  line-height: 1.6;
+}
+
+a {
+  color: #0ef;
+  text-decoration: none;
+}
+
+header {
+  background: #000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0ef;
+  letter-spacing: 1.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0ef, #00aaff);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #0ef;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #d0f0ff;
+}
+
+.btn-primary {
+  background: #0ef;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #0ef80a;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #00d8ff;
+  box-shadow: 0 8px 20px #00d8ffcc;
+}
+
+.section-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0ef;
+  text-align: center;
+  text-shadow: 0 0 5px #0efaa;
+}
+
+/* Tic Tac Toe */
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background: #222;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.cell {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #0ef;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #0ef2;
+}
+
+.cell.x {
+  color: #00ffff;
+}
+
+.cell.o {
+  color: #ff55ff;
+}
+
+.game-info {
+  font-size: 1.25rem;
+  min-height: 1.5rem;
+  color: #0ef;
+}
+
+/* Buttons */
+.btn-secondary {
+  background: transparent;
+  color: #0ef;
+  border: 2px solid #0ef;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #0ef;
+  color: #000;
+}
+
+/* Tasbeeh Counter */
+.tasbeeh-counter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 250px;
+  margin: auto;
+}
+
+#count {
+  font-size: 4rem;
+  color: #0ef;
+  text-shadow: 0 0 10px #0ef;
+}
+
+/* Portfolio cards */
+.portfolio {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #222;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 0 15px #0ef6;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 1rem;
+  color: #ddd;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+  color: #0ef;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+  color: #0ef;
+  margin-top: 3rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
